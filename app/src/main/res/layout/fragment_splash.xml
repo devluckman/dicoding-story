@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_purple"
+    tools:context=".presentation.splash.SplashFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="center"
+        android:text="@string/hello_coders"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</FrameLayout>

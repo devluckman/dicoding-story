@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-parcelize'
+}
+
+android {
+
+    compileSdk AppConfig.compileSdk
+
+    defaultConfig {
+        applicationId AppConfig.applicationId
+        minSdk AppConfig.minSdk
+        targetSdk AppConfig.targetSdk
+        versionCode AppConfig.versionCode
+        versionName AppConfig.versionName
+
+        testInstrumentationRunner AppConfig.testInstrumentationRunner
+        buildConfigField "String", "BASE_URL", "\"https://story-api.dicoding.dev/v1/\"";
+        resValue("string", "GEO_API_KEY", geo_api_key)
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+}
+
+dependencies {
+
+    implementation Dependencies.core
+    implementation Dependencies.appcompat
+    implementation Dependencies.material
+    implementation Dependencies.constraintLayout
+    implementation Dependencies.dataStore
+    implementation Dependencies.livedataKtx
+    implementation Dependencies.viewModelKtx
+    implementation Dependencies.navigationFragKtx
+    implementation Dependencies.navigationUiKtx
+    implementation Dependencies.paging
+
+    implementation Dependencies.hiltAndroid
+    kapt Dependencies.hiltCompiler
+
+    implementation Dependencies.retrofit
+    implementation Dependencies.loggingInterceptor
+    implementation Dependencies.converterGson
+
+    implementation Dependencies.coroutinesCore
+    implementation Dependencies.coroutines
+
+    implementation Dependencies.glide
+    kapt Dependencies.glideCompiler
+
+    implementation Dependencies.servicesMaps
+    implementation Dependencies.servicesLocation
+
+    testImplementation Dependencies.jUnit
+    androidTestImplementation Dependencies.extJUnit
+    androidTestImplementation Dependencies.espresso
+
+    testImplementation Dependencies.jUnit
+    testImplementation Dependencies.mockitoCore
+    testImplementation Dependencies.mockitoInline
+    testImplementation Dependencies.coreTest
+    testImplementation Dependencies.coroutinesTest
+    testImplementation Dependencies.truth
+    testImplementation Dependencies.turbine
+}

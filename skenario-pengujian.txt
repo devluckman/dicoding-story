@@ -1,0 +1,47 @@
+Skenario Pengujian:
+
+SplashViewModelTest
+1. Cek state login user dengan kondisi token tidak kosong
+2. Cek state login user dengan kondisi token kosong
+
+LoginViewModelTest
+1. Ketika melakukan Login berhasil, token di simpan dan Memastikan mengembalikan Result.OnSuccess.
+2. Ketika melakukan Login gagal Memastikan mengembalikan Result.OnError.
+
+RegisterViewModelTest
+1. Ketika melakukan Register berhasil, Memastikan mengembalikan Result.OnSuccess.
+2. Ketika melakukan Register gagal, Memastikan mengembalikan Result.OnError.
+
+AddStoryViewModelTest
+1. Ketika melakukan Upload Story berhasil, Memastikan mengembalikan Result.OnSuccess.
+2. Ketika melakukan Upload Story gagal, Memastikan mengembalikan Result.OnError.
+
+MapsViewModelTest
+1. Ketika Get Stories berhasil, Memastikan data stories tidak kosong
+2. Ketika Get Stories berhasil, Memastikan mengembalikan Result.OnSuccess
+3. Ketika Get Stories gagal, Memastikan mengembalikan Result.OnError.
+
+StoriesViewModelTest
+1. Ketika Get Stories berhasil, Memastikan data stories tidak kosong
+2. Ketika Get Stories berhasil, Memastikan data stories dengan yang diharapkan
+3. Ketika Get Stories berhasil, Memastikan jumlah data stories sesuai
+4. Ketika Get Stories berhasil, Memastikan actual data description index pertama sesuai dengan expected data
+5. Ketika logout berhasil, Memastikan token di clear dari data store
+
+RepositoryImplTest
+    a. Login
+        1. Memastikan token tersimpan di data store
+        2. Memastikan response sesuai yang diharapkan
+    b. Register
+        1. Memastikan pesan response sesuai yang diharapkan
+    c. Logout
+        1. Memastikan data token di clear
+    d. Add Story
+        1. Memastikan pesan response sesuai yang diharapkan
+    e. Get Story With Location
+        1. Memastikan data tidak null
+        2. Memastikan data sesuai dengan yang diharapkan
+    f. Get Story Paging
+        1. Memastikan data tidak null
+        2. Memastikan jumlah data sesuai dengan yang diharapkan.
+

@@ -1,0 +1,1 @@
+/Users/lukmanulhakim/AndroidStudioProjects/TESTING/Story/buildSrc/build/classes/kotlin/main/AppConfig.class:/Users/lukmanulhakim/AndroidStudioProjects/TESTING/Story/buildSrc/build/classes/kotlin/main/Dependencies.class:/Users/lukmanulhakim/AndroidStudioProjects/TESTING/Story/buildSrc/build/classes/kotlin/main/Version.class

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_coders">Hello Coders</string>
+
+    <string name="desc_add_story">Tambah Cerita</string>
+    <string name="desc_photo_story">Foto Cerita</string>
+    <string name="retry">Coba lagi</string>
+    <string name="unknown">Terjadi Kesalahan</string>
+    <string name="add_story">Tambah Cerita</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="description">Deskripsi</string>
+    <string name="upload">Unggah</string>
+    <string name="login">Masuk</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="register">Daftar</string>
+    <string name="name">Nama</string>
+    <string name="submit">Kirim</string>
+    <string name="stories">Cerita</string>
+    <string name="registering">Mendaftarkan..</string>
+    <string name="logging_in">Sedang Masuk..</string>
+    <string name="email_not_valid">Email tidak valid</string>
+    <string name="password_validation">Kata sandi harus lebih panjang dari 6 karakter</string>
+    <string name="maps">Peta</string>
+    <string name="settings">Pengaturan</string>
+    <string name="logout">Keluar</string>
+    <string name="language">Bahasa</string>
+    <string name="your_current_location">Your current location</string>
+
+</resources>
